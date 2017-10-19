@@ -1,0 +1,14 @@
+{
+  "name": "minimal",
+  "version": "1.0.0",
+  "description": "design idea",
+  "main": "app.js",
+  "scripts": {
+    "test": "console.log('test');"
+  },
+  "author": "trevor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

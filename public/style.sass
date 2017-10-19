@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
+
+$black: #333
+$blue: #07a0c3
+$yellow: #f0c808
+$red: #dd1c1a
+$white: #f7f7f7
+$grey: #9e9e9e
+
+$font: Roboto, sans-serif
+
+//begin styling
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	outline: none
+
+//end clear
+
+body
+	background-color: $white
+
+.container
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	max-width: 1000px
+	margin: 50px auto
+
+header
+	grid-column: 1/5
+	padding: 15px
+
+	display: grid
+	grid-template-columns: 1fr 1fr
+
+	.logo
+		color: $black
+		font-family: $font
+		font-size: 150%
+		font-weight: 700
+		letter-spacing: 1px
+		&::before
+			content: '+'
+			color: $black
+			font-weight: 900
+	
+	nav
+		text-align: right		
+
+		ul
+			list-style: none
+			padding-right: 15px
+			padding-top: 5px
+
+			li
+				display: inline-block
+				font-family: $font
+				font-size: 110%
+				font-weight: 400
+				padding-left: 10px
+				
+
+				cursor: pointer
+				transition: 0.3s
+				
+
+				&:hover
+					color: $red
+
+// End of header styling
+
+.hero
+	grid-column: 1/5
+	height: 500px
+
+	margin: 45px 15px 0 15px
+
+
+	background-image: url('./img/hero.jpeg')
+	background-size: cover
+	background-position: center
+	text-align: center
+
+	position: relative
+
+	span
+		display: inline-block
+		margin-top: 150px
+		padding: 5px 25px
+
+		width: 600px
+
+		font-family: $font
+		font-weight: 700
+		color: $white
+		background-color: $black
+		font-size: 350%
+
+		letter-spacing: 5px
+		text-align: left
+
+		position: absolute
+		right: 0
+		top: -70px
+
+// End of Hero
+
+.mid
+	grid-column: 1/5
+	margin: 160px 15px 45px 15px
+	padding-left: 10px
+	height: 500px
+
+	font-family: $font
+
+	h1
+		margin-bottom: 45px
+		padding: 5px
+		display: inline-block
+
+		background-color: $black
+		color: $white
+
+		letter-spacing: 2px
+
+		font-size: 150%
+
+	p
+		
+		width: 40%
+		padding: 5px
+		margin-bottom: 15px
+
+		color: $black
+		font-size: 120%
+
+		line-height: 30px
+
+	.strike
+		text-decoration: line-through
+
+	.highlightRed
+		color: $white
+
+//switched to a global class
+
+.highlight
+	background-color: $yellow
+.highlightRed
+	background-color: $blue
+		color: $white
+		font-weight: 700
+		font-size: 120%
+
+// End of mid div styling
+
+.quickLook
+	grid-column: 1/5
+	margin: 160px 15px 45px 15px
+	padding-left: 10px
+	height: 500px
+
+	font-family: $font
+
+	h2
+		margin-bottom: 150px
+		padding: 5px
+		display: inline-block
+
+		background-color: $black
+		color: $white
+
+		letter-spacing: 2px
+
+		font-size: 250%
+
+	ul
+		list-style: none
+		text-align: right
+
+		li
+			font-weight: 700
+			font-size: 500%
+			color: $black
+			margin-bottom: 15px
+
+			.highlight
+				padding: 2px 15px
+		
+
+			 
+
+// End of quicklook div
+
+
+footer
+	grid-column: 1/5
+
+	font-family: $font
+	color: $yellow
+
+	margin-top: 250px
+	
+
+	line-height: 20px
+
+	#cred
+		width: 400px
+		float: left
+
+
+		small
+			display: inline-block
+			background-color: $blue
+
+			padding: 10px
+
+			font-weight: 500
+
+			a
+				color: $white
+
+	#social
+		float: right
+		color: $black
+		padding-right: 15px
+
+		i
+			padding-left: 15px
+			cursor: pointer
+			transition: 0.3s
+
+			&:hover
+				color: $blue
