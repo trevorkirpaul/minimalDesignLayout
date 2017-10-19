@@ -9,5 +9,10 @@ Design wise, practice has been paying off as I really like this style so far. If
 
 Soon I'll be focusing on webpack and react along with making a full website. I'll start from the ground up with brand identity and logo design and hopefully create my first official portfolio piece. 
 
-Thanks for reading.
+## Added About Page
 
+> Along with a new section I also finally used SSH. I'm sure it's better and more professional in so many ways but I also found it pretty fun. Just another step towards making this my career. 🐱
+
+
+
+Thanks for reading.
