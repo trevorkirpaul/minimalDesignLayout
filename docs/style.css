@@ -36,20 +36,32 @@ header {
       padding-right: 15px;
       padding-top: 5px; }
       header nav ul li {
-        display: inline-block;
-        font-family: Roboto, sans-serif;
-        font-size: 110%;
-        font-weight: 400;
-        padding-left: 10px;
-        cursor: pointer;
-        transition: 0.3s; }
-        header nav ul li:hover {
-          color: #dd1c1a; }
+        display: inline-block; }
+        header nav ul li a {
+          font-family: Roboto, sans-serif;
+          text-decoration: none;
+          display: inline-block;
+          font-family: Roboto, sans-serif;
+          font-size: 110%;
+          font-weight: 400;
+          padding: 2px 4px 2px 10px;
+          background-color: #cacaca;
+          color: #333;
+          transition: 0.3s; }
+          header nav ul li a:hover {
+            color: #f7f7f7;
+            background-color: #333; }
+        header nav ul li .active {
+          background-color: #f0c808;
+          user-select: none; }
+          header nav ul li .active:hover {
+            color: #333;
+            background-color: #f0c808; }
 
 .hero {
   grid-column: 1/5;
   height: 500px;
-  margin: 45px 15px 0 15px;
+  margin: 45px 15px 120px 15px;
   background-image: url("./img/hero.jpeg");
   background-size: cover;
   background-position: center;
@@ -73,9 +85,8 @@ header {
 
 .mid {
   grid-column: 1/5;
-  margin: 160px 15px 45px 15px;
+  margin: 80px 15px 45px 15px;
   padding-left: 10px;
-  height: 500px;
   font-family: Roboto, sans-serif; }
   .mid h1 {
     margin-bottom: 45px;
@@ -110,16 +121,18 @@ header {
   grid-column: 1/5;
   margin: 160px 15px 45px 15px;
   padding-left: 10px;
-  height: 500px;
   font-family: Roboto, sans-serif; }
   .quickLook h2 {
     margin-bottom: 150px;
     padding: 5px;
-    display: inline-block;
+    display: block;
     background-color: #333;
     color: #f7f7f7;
     letter-spacing: 2px;
-    font-size: 250%; }
+    font-size: 250%;
+    text-align: right; }
+    .quickLook h2::before {
+      content: "+ "; }
   .quickLook ul {
     list-style: none;
     text-align: right; }
@@ -145,6 +158,9 @@ footer {
       background-color: #07a0c3;
       padding: 10px;
       font-weight: 500; }
+      footer #cred small::before {
+        content: "+ ";
+        color: #f7f7f7; }
       footer #cred small a {
         color: #f7f7f7; }
   footer #social {
@@ -158,4 +174,4 @@ footer {
       footer #social i:hover {
         color: #07a0c3; }
 
-
+/*# sourceMappingURL=style.css.map */
